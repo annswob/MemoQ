@@ -1,0 +1,142 @@
+﻿<!--
+Przygotować stronę wizytówkę. Wytyczne dla każdej sekcji opisano w miejscu w którym dana sekcja ma się znaleźć.
+-->
+
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+<div id="me">
+    <!--
+    - nagłówek - imię i nazwisko
+    - obrazek np. https://www.gravatar.com/avatar/?d=mm&s=100
+    -->
+    <h1>Anna Swoboda</h1>
+    <br/> <img src="https://us.edu.pl/instytut/il/wp-content/uploads/sites/27/2020/01/Swoboda_Anna_foto.jpg" alt="Anna Swoboda"/> <br/>
+  </div>
+<div id="content">
+<!--
+  Wstęp do CV - krótki opis umiejętności
+  - nagówek, np. Tester z 5-letnim doświadczeniem
+  - paragraf z dowolnym tekstem.
+  -->
+  <h2>Pisanie i komunikacja techniczna</h2>
+  <p>Jestem wszechstronną tłumaczką, poszukującą nowych możliwości w pracy zarówno zdalnie jak i z biura. Z uwagi  na to, że języki i pisanie są moją pasją, chciałabym kontynuować rozwijanie swych umiejętności w komunikacji technicznej. Zdobyłam doświadczenie w pracach badawczych, tłumaczeniach i nauczaniu, lubię uczyć się od ekspertów oraz efektywnie przekazywać wiedzę.
+    </p>
+    <div id="technologies">
+    <!--
+        - nagłówek wskazujący że to sekcja z umiejętnościami
+        - lista nienumerowana - wypunktować kilka technologii, które jako tester z 5-letnim doświadczeniem znasz
+    -->
+    <h3>Umiejętności</h3>
+    <ul>
+        <li>MemoQ</li>
+        <li>Wordfast Anywhere</li>
+        <li>Visual Studio Code</li>
+        <li>GitHub</li>
+        <li>Języki: angielski, francuski, hiszpański</li>
+      </ul>
+    </div>
+
+    <table id="experience">
+        <!--
+         Tabelka z trzema kolumnami prezentująca doświadczenie - firma, od kiedy do kiedy, zadania.
+         Tabela ma zawierać nagłówek i kilka wierszy, dowolna zawartość
+        
+        Przykład:
+
+            +--------------------+--------------------------+-----------------------+
+            | Firma              | Od - do                  | Zadania               |
+            |--------------------|--------------------------|-----------------------|
+            | Firma Z            | 01.01.2015 - obecnie     | Tworzenie aplikacji Z |
+            | Firma Y            | 01.01.2010 - 01.01.2015  | Tworzenie aplikacji Y |
+            | Firma X            | 01.01.2000 - 01.01.2010  | Tworzenie aplikacji Z |
+            +--------------------+--------------------------+-----------------------+
+
+         -->
+         <tr>
+            <th>Pracodawca</th>
+            <th>Czas</th> 
+            <th>Obowiązki</th>
+          </tr>
+          <tr>
+            <td>Uniwersytet Śląski</td>
+            <td>2019 - obecnie</td> 
+            <td>pisanie i współtworzenie publikacji naukowych, prowadzenie praktycznych zajęć językowych z angielskiego i francuskiego, organizacja międzynarodowych wydarzeń związanych z językiem francuskim i kulturą osób francuskojęzycznych</td>
+          </tr>
+          <tr>
+            <td>eLingwista</td>
+            <td>2017-2019</td> 
+            <td>praktyczne zajęcia językowe, zajęcia z języka specjalistycznego i zawodowego (angielski, francuski)</td>
+          </tr>
+          <tr>
+            <td>HCL</td>
+            <td>2016-2017</td> 
+            <td>tłumaczenie dokumentów i danych technicznych (EN-FR), korekta tłumaczonej dokumentacji, podróże służbowe do siedziby Klienta w celu zapewnienia jakości tłumaczeń</td>
+          </tr> 
+          <tr>
+            <td>Capgemini</td>
+            <td>2015-2016</td> 
+            <td>tłumaczenia dokumentacji technicznej (EN-FR, punkt obsługi IT (francuski)</td>
+          </tr>   
+    </table>
+
+    <div id="reccomendations">
+       <!--
+        - nagłówek
+        - wykorzystać tag <blockquote> - jedna lub dwie wystawione opinie przez osoby trzecie, np.
+            Super pracownik! Andrzej Kowalski
+       -->
+       <blockquote cite="http://www.wydawnictwo.us.edu.pl/node/23353">
+        Anna Swoboda, pracownik naukowo-dydaktyczny w Instytucie Literaturoznawstwa na Uniwersytecie Śląskim w Katowicach, tłumaczka i lektorka języka angielskiego oraz francuskiego. Przedmiotem jej zainteresowań naukowych jest francuskojęzyczna literatura afrykańska (szczególnie senegalska), zagadnienia związane z różnicami kulturowymi, badania dotyczące przemocy i traumy oraz literatury wyobrażeniowe.
+        </blockquote>
+    </div>
+
+    <div id="contact">
+        <!--
+        - nagłówek
+        - Formularz który zawiera:
+            pole na imię, email, wiadomość (pole tekstowe) i przycisk do wysyłki
+        -->
+        <h3>Napisz do mnie</h3>
+        <form>
+          <label for="fname">Imię:</label>
+          <input type="text" id="fname" name="fname"><br/><br/>
+              
+          <label for="fname">E-mail:</label>
+          <input type="text" id="fname" name="fname"><br/><br/>
+              
+              
+              
+          <label for="comment">Twoja wiadomość:</label><br/>
+          <textarea id="comment" name="comment"></textarea><br/>
+          <input type="submit" value="Wyślij">
+          </form>
+    </div>
+
+    <div id="links">
+        <!--
+            - dwa linki obrazkowe - link którego zawartością jest obrazek - do (dowolnych) profili społecznościowych - fb, twitter
+            - przykładowe obrazki poniżej. Szerokość obrazków 15px
+
+              https://icons.duckduckgo.com/ip3/www.facebook.com.ico
+              https://icons.duckduckgo.com/ip3/twitter.com.ico
+        -->
+        <br/> <a href="https://www.linkedin.com/in/anna-swoboda/"><img src="images/linkedin.ico" alt="LinkedIn" style="width:15px;height:15px;"/></a> <br/> <a href="https://www.researchgate.net/profile/Anna-Swoboda"><img src="images/researchgate.ico" alt="Research Gate" style="width:15px;height:15px;"/></a>
+      </div>
+</div>
+</body>
+
+</html>
